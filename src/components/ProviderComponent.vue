@@ -80,6 +80,7 @@ export default {
       this.page = this.$route.query.page;
       try {
         const url = `${backEndUrl}server/${this.resource}/?`;
+        console.log(url + new URLSearchParams({ page: this.page }));
         let response = await fetch(
           url + new URLSearchParams({ page: this.page }),
           {
