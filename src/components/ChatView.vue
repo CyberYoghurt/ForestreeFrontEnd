@@ -82,7 +82,7 @@ export default {
           this.token
       );
       this.connection = new WebSocket(
-        'ws://' +
+        'wss://' +
           backEndUrl +
           'ws/chat/' +
           this.name.toLowerCase() +
