@@ -72,6 +72,15 @@ export default {
     },
     setConnection() {
       this.messages = [];
+      console.log(
+        'ws://' +
+          backEndUrl +
+          'ws/chat/' +
+          this.name.toLowerCase() +
+          '/' +
+          '?token=' +
+          this.token
+      );
       this.connection = new WebSocket(
         'ws://' +
           backEndUrl +
