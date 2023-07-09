@@ -44,6 +44,7 @@
   </div>
 </template>
 <script>
+import backEndUrl from '../utils/backEndUrl.js';
 export default {
   data() {
     return {
@@ -73,8 +74,8 @@ export default {
       this.messages = [];
       this.connection = new WebSocket(
         'ws://' +
-          '192.168.100.31:4321' +
-          '/ws/chat/' +
+          backEndUrl +
+          'ws/chat/' +
           this.name.toLowerCase() +
           '/' +
           '?token=' +

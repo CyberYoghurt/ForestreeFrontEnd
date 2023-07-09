@@ -61,7 +61,7 @@
               :key="wood.name"
             >
               <img
-                :src="'http://192.168.100.31:4321/' + wood.image"
+                :src="backEndUrl + wood.image"
                 alt="Image of the submited supplier"
                 class="manager__supplier-image"
               />
@@ -88,7 +88,7 @@
               :key="machinery.name"
             >
               <img
-                :src="'http://192.168.100.31:4321/' + machinery.image"
+                :src="backEndUrl + machinery.image"
                 alt="Image of the submited supplier"
                 class="manager__supplier-image"
               />

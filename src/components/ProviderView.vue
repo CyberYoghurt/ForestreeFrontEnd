@@ -78,7 +78,7 @@ export default {
     this.ownerId = data.owner.id;
     this.address = data.address;
     this.telephone = data.telephone;
-    this.image = `http://192.168.100.31:4321/` + data.image;
+    this.image = backEndUrl + data.image;
     this.map = L.map('map2').setView([data.latitude, data.longitude], 5);
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
       attribution:
