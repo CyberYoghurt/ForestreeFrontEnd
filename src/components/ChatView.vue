@@ -73,7 +73,7 @@ export default {
     setConnection() {
       this.messages = [];
       console.log(
-        'ws://' +
+        'wss://' +
           backEndUrl +
           'ws/chat/' +
           this.name.toLowerCase() +
