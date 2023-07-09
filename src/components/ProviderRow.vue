@@ -22,11 +22,10 @@ export default {
       };
     },
     image() {
-      return 'http://192.168.100.31:4321/' + this.provider.image;
+      return backEndUrl + this.provider.image;
     },
   },
-  mounted() {
-  },
+  mounted() {},
   props: {
     provider: {
       type: Object,
