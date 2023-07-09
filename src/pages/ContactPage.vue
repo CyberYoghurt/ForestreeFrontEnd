@@ -31,7 +31,6 @@ export default {
     const response = await fetch(backEndUrl + 'server/chat-info/', {
       headers: {
         Authorization: 'Bearer ' + String(this.$store.state.accessToken),
-        'Content-Type': 'application/json',
       },
     });
     console.log(response);
