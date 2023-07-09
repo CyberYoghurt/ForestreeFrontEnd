@@ -13,6 +13,8 @@
   </tr>
 </template>
 <script>
+import backEndUrl from '../utils/backEndUrl.js';
+
 export default {
   computed: {
     link() {
