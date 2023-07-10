@@ -145,6 +145,7 @@ export default {
       error: false,
       loading: false,
       message: '',
+      backEndUrl: backEndUrl,
     };
   },
   components: { ShopForm, ProviderPaginator },
