@@ -106,6 +106,7 @@ export default {
   margin: 1rem 0;
   background-color: rgb(var(--color-1));
   height: 20px;
+  max-width: 800px;
 }
 .shop__form-textarea {
   display: flex;

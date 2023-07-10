@@ -166,6 +166,7 @@ export default {
             method: 'GET',
           }
         );
+        console.log(response);
         if (response.status === 404) {
           this.error = true;
           throw new Error('Page not found');
