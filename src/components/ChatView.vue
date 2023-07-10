@@ -72,7 +72,6 @@ export default {
     },
     setConnection() {
       this.messages = [];
-      console.log(backEndUrl.slice(8)); 
       this.connection = new WebSocket(
         'wss://' +
           backEndUrl.slice(8) +   

@@ -27,13 +27,11 @@ export default {
   },
 
   async mounted() {
-    console.log(this.$store.state.accessToken);
     const response = await fetch(backEndUrl + 'server/chat-info/', {
       headers: {
         Authorization: 'Bearer ' + String(this.$store.state.accessToken),
       },
     });
-    console.log(response);
     let data = await response.json();
 
     //First goes the active chat

@@ -62,7 +62,6 @@ export default {
         password2: this.password2,
       });
       if (sign === true) {
-        console.log('need to add to global chat');
 
         this.$emit('toggleForm');
       }

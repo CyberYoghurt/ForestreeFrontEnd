@@ -36,7 +36,6 @@ export const store = createStore({
     async logIn(context, payload) {
       context.state.message = '';
       try {
-        console.log('Debugging fetch', backEndUrl);
         const response = await fetch(backEndUrl + 'api/token/', {
           method: 'POST',
           headers: {
@@ -47,7 +46,6 @@ export const store = createStore({
             password: payload.password,
           }),
         });
-        console.log(response);
         if (response.status === 200) {
           const data = await response.json();
           context.state.accessToken = data.access;
