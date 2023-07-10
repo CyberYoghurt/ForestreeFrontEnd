@@ -14,10 +14,7 @@
           v-for="(item, index) in cart"
           :key="item.id"
         >
-          <img
-            class="shop__cart-image"
-            :src="'http://192.168.100.31:4321' + item.image"
-          />
+          <img class="shop__cart-image" :src="backEndUrl + item.image" />
           <div>{{ item.name }}</div>
           <div>{{ item.quantity }}</div>
           <svg class="shop__cart-delete" @click="deleteFromCart(index)">
