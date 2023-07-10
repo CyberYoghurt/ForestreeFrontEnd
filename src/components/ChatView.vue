@@ -96,7 +96,9 @@ export default {
         }
         if (this.isOpened === true) {
           setTimeout(() => {
-            this.$refs.container?.scroll(0, this.$refs.container.scrollHeight);
+            if (this.$refs.container) {
+              this.$refs.container.scroll(0, this.$refs.container.scrollHeight);
+            }
           }, 1000);
         }
       };
