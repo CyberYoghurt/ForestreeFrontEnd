@@ -101,6 +101,7 @@ export default {
   margin: 3rem auto;
   width: 80%;
   border-radius: 1rem;
+  padding: 1rem;
 }
 .shop__form-input {
   margin: 1rem 0;
