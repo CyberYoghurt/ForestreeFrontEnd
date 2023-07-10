@@ -113,6 +113,7 @@ export default {
   display: flex;
   flex-direction: column;
   text-align: center;
+  height: 4rem;
 }
 .shop__form-submit {
   margin-bottom: 1rem;
