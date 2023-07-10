@@ -7,7 +7,7 @@
     <label class="shop__form-label"
       >Name: <input class="shop__form-input" type="text" v-model="name"
     /></label>
-    <label
+    <label class="shop__form-label"
       >Brand: <input class="shop__form-input" type="text" v-model="brand"
     /></label>
     <label class="shop__form-textarea"
@@ -105,6 +105,7 @@ export default {
 .shop__form-input {
   margin: 1rem 0;
   background-color: rgb(var(--color-1));
+  height: 20px;
 }
 .shop__form-textarea {
   display: flex;
@@ -129,5 +130,6 @@ export default {
 .shop__form-label {
   display: flex;
   justify-content: space-around;
+  align-content: center;
 }
 </style>
