@@ -150,6 +150,7 @@ export default {
   components: { ShopForm, ProviderPaginator },
   async mounted() {
     this.setPage();
+    console.log(backEndUrl);
   },
   methods: {
     async setPage() {
