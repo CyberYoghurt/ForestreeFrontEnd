@@ -128,6 +128,7 @@ export default {
       passwordError: null,
       woods: [],
       machineries: [],
+      backEndUrl: backEndUrl,
     };
   },
   props: ['messagePassword', 'messageProfile'],
