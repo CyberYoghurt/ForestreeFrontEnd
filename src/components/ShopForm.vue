@@ -12,7 +12,14 @@
     /></label>
     <label class="shop__form-textarea"
       >Description:
-      <textarea type="text" cols="60" rows="8" v-model="description" required />
+      <textarea
+        class="shop__form-input-textarea"
+        type="text"
+        cols="60"
+        rows="8"
+        v-model="description"
+        required
+      />
     </label>
     <label class="shop__form-label"
       >Price:
@@ -101,6 +108,9 @@ export default {
   background-color: rgb(var(--color-1));
   height: 20px;
   max-width: 800px;
+}
+.shop__form-input-textarea {
+  height: 50px;
 }
 .shop__form-textarea {
   display: flex;
