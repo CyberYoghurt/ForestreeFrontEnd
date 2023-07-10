@@ -8,7 +8,7 @@
             <div class="checkout__cart-borderimage">
               <img
                 class="checkout__cart-image"
-                :src="'http://192.168.100.31:4321' + item.image"
+                :src="backEndUrl + item.image"
               />
             </div>
             <h4>{{ item.name }}</h4>
@@ -52,6 +52,7 @@ export default {
       stripe: null,
       emailAddress: '',
       elements: null,
+      backEndUrl: backEndUrl,
     };
   },
   methods: {
