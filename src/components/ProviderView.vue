@@ -69,6 +69,7 @@ export default {
     const response = await fetch(
       url + new URLSearchParams({ id: this.supplierId })
     );
+    console.log(response);
     const data = await response.json();
     data;
     this.name = data.name;
