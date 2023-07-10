@@ -10,17 +10,6 @@
     <label class="shop__form-label"
       >Brand: <input class="shop__form-input" type="text" v-model="brand"
     /></label>
-    <label class="shop__form-textarea"
-      >Description:
-      <textarea
-        class="shop__form-input-textarea"
-        type="text"
-        cols="60"
-        rows="8"
-        v-model="description"
-        required
-      />
-    </label>
     <label class="shop__form-label"
       >Price:
       <input
@@ -37,6 +26,17 @@
     <label class="shop__form-label"
       >Image: <input class="shop__form-input" type="file" @change="handleImage"
     /></label>
+    <label class="shop__form-textarea"
+      >Description:
+      <textarea
+        class="shop__form-input-textarea"
+        type="text"
+        cols="60"
+        rows="8"
+        v-model="description"
+        required
+      />
+    </label>
     <button class="shop__form-submit" type="submit">Upload</button>
   </form>
 </template>
@@ -111,6 +111,7 @@ export default {
 }
 .shop__form-input-textarea {
   height: 50px;
+  background-color: rgb(var(--color-1));
 }
 .shop__form-textarea {
   display: flex;
@@ -136,6 +137,6 @@ export default {
 .shop__form-label {
   display: flex;
   justify-content: space-around;
-  align-content: center;
+  align-items: center;
 }
 </style>
