@@ -126,4 +126,8 @@ export default {
 .shop__form > label {
   width: 95%;
 }
+.shop__form-label {
+  display: flex;
+  justify-content: space-around;
+}
 </style>
