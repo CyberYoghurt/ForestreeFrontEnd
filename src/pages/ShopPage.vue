@@ -154,6 +154,7 @@ export default {
   },
   methods: {
     async setPage() {
+      console.log(backEndUrl);
       this.page = this.$route.query.page;
       try {
         const url = `${backEndUrl}server/tool-shop/?`;
