@@ -59,10 +59,7 @@
       </div>
       <div class="shop__item" v-for="item in counter" :key="item.id">
         <div class="shop__item-box1">
-          <img
-            class="shop__item-image"
-            :src="'http://192.168.100.31:4321' + item.image"
-          />
+          <img class="shop__item-image" :src="backEndUrl + item.image" />
           <div class="shop__item-name">{{ item.name }}</div>
           <div class="shop__item-brand">{{ item.brand || 'Brand' }}</div>
           <svg class="shop__item-rating-icon">
