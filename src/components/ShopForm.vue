@@ -123,4 +123,7 @@ export default {
   background-color: rgb(var(--color-1));
   color: rgb(var(--color-9));
 }
+.shop__form > label {
+  width: 95%;
+}
 </style>

@@ -74,7 +74,7 @@ export default {
       this.messages = [];
       this.connection = new WebSocket(
         'wss://' +
-          backEndUrl.slice(8) +   
+          backEndUrl.slice(8) +
           'ws/chat/' +
           this.name.toLowerCase() +
           '/' +
@@ -96,7 +96,7 @@ export default {
         }
         if (this.isOpened === true) {
           setTimeout(() => {
-            this.$refs.container.scroll(0, this.$refs.container.scrollHeight);
+            this.$refs.container?.scroll(0, this.$refs.container.scrollHeight);
           }, 1000);
         }
       };
