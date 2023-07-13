@@ -151,11 +151,9 @@ export default {
   components: { ShopForm, ProviderPaginator },
   async mounted() {
     this.setPage();
-    console.log(backEndUrl);
   },
   methods: {
     async setPage() {
-      console.log(backEndUrl);
       this.page = this.$route.query.page;
       try {
         const url = `${backEndUrl}server/tool-shop/?`;
@@ -166,7 +164,6 @@ export default {
             method: 'GET',
           }
         );
-        console.log(response);
         if (response.status === 404) {
           this.error = true;
           throw new Error('Page not found');

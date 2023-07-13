@@ -71,8 +71,6 @@ export default {
     );
     const data = await response.json();
     console.log(data);
-
-    data;
     this.name = data.name;
     this.username = data.owner.username;
     this.owner = 'Anonymus' || data.owner.fist_name + data.owner.last_name;
