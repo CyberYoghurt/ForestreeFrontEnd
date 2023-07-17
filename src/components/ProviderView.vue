@@ -70,7 +70,6 @@ export default {
       url + new URLSearchParams({ id: this.supplierId })
     );
     const data = await response.json();
-    console.log(data);
     this.name = data.name;
     this.username = data.owner.username;
     this.owner = 'Anonymus' || data.owner.fist_name + data.owner.last_name;

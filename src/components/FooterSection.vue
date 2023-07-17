@@ -3,10 +3,7 @@
     <div class="footer__flex">
       <div class="footer__text">
         Forestree Demo Project done by
-        <a
-          class="footer__link"
-          href="https://www.linkedin.com/in/roberto-camacho-rivera-7a4a0a204/"
-        >
+        <a class="footer__link" href="https://www.linkedin.com/in/robertcrdev/">
           Robert CR</a
         >
       </div>
